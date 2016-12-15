@@ -32,10 +32,10 @@ $update = $myconnection->update('reports', array('reportYear' => '2016'));
 ```
 
 ## Motivation
-I wrote this to simplify the MYSQL DB process. This creates a mysql connection object and simplifies the query process
+I wrote this to simplify the MYSQL DB process. This creates a mysql connection object and simplifies the query process.
 
 ## Installation
-To install, simply include the database.php file in your project and use a php include in php files needing the database
+To install, simply include the database.php file in your project and use a php include in php files needing the database.
 
 ```PHP
 <?php
@@ -44,16 +44,18 @@ To install, simply include the database.php file in your project and use a php i
 ```
 ## API Reference
 
-all parameters requesting an associative array should be formatted as follows 
+all parameters requesting an associative array should be formatted as follows: 
 
     array('key' => 'value', 'key2' => 'value2')
     
 ### Methods
+```
 constructor (host, username, password, database)
 escape (value to be escaped)
 select (table, associative array of select values or null for *, [optional] associative array of where conditions)
 insert (table, associative array of values)
 update (table, associative array of set values, [optional] associative array of where conditions)
+```
 
 ## License
 
